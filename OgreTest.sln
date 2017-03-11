@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreLowLevel", "OgreLowLevel\OgreLowLevel.vcxproj", "{7C334E84-C6F7-4EF0-BD00-E50BDC72467B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreMinimal", "OgreMinimal\OgreMinimal.vcxproj", "{6F3C62C7-ABBE-4AEA-AE58-BA6DB08BE9E2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreTiny", "OgreTiny\OgreTiny.vcxproj", "{5BFBB039-C47D-4D1C-9E9E-08E23E804877}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreAruco", "OgreAruco\OgreAruco.vcxproj", "{C44DD104-CF3A-4451-B781-AE68AF79B524}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C334E84-C6F7-4EF0-BD00-E50BDC72467B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7C334E84-C6F7-4EF0-BD00-E50BDC72467B}.Debug|Win32.Build.0 = Debug|Win32
+		{7C334E84-C6F7-4EF0-BD00-E50BDC72467B}.Release|Win32.ActiveCfg = Release|Win32
+		{7C334E84-C6F7-4EF0-BD00-E50BDC72467B}.Release|Win32.Build.0 = Release|Win32
+		{6F3C62C7-ABBE-4AEA-AE58-BA6DB08BE9E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F3C62C7-ABBE-4AEA-AE58-BA6DB08BE9E2}.Debug|Win32.Build.0 = Debug|Win32
+		{6F3C62C7-ABBE-4AEA-AE58-BA6DB08BE9E2}.Release|Win32.ActiveCfg = Release|Win32
+		{6F3C62C7-ABBE-4AEA-AE58-BA6DB08BE9E2}.Release|Win32.Build.0 = Release|Win32
+		{5BFBB039-C47D-4D1C-9E9E-08E23E804877}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5BFBB039-C47D-4D1C-9E9E-08E23E804877}.Debug|Win32.Build.0 = Debug|Win32
+		{5BFBB039-C47D-4D1C-9E9E-08E23E804877}.Release|Win32.ActiveCfg = Release|Win32
+		{5BFBB039-C47D-4D1C-9E9E-08E23E804877}.Release|Win32.Build.0 = Release|Win32
+		{C44DD104-CF3A-4451-B781-AE68AF79B524}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C44DD104-CF3A-4451-B781-AE68AF79B524}.Debug|Win32.Build.0 = Debug|Win32
+		{C44DD104-CF3A-4451-B781-AE68AF79B524}.Release|Win32.ActiveCfg = Release|Win32
+		{C44DD104-CF3A-4451-B781-AE68AF79B524}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\aruco">
+      <UniqueIdentifier>{762142f1-b8e3-4b62-af8a-de6c81da1647}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aruco\area.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\arucofidmarkers.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\ar_omp.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\BaseApplication.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\board.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\boarddetector.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\cameraparameters.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\chromaticmask.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\cvdrawingutils.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\DebugDrawer.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\highlyreliablemarkers.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\marker.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\markerdetector.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\subpixelcorner.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\tutorial.cpp">
+      <Filter>Source Files\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="MinimalOgre.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aruco\area.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\aruco.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\arucofidmarkers.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\ar_omp.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\BaseApplication.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\board.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\boarddetector.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\cameraparameters.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\chromaticmask.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\cvdrawingutils.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\DebugDrawer.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\exports.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\highlyreliablemarkers.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\marker.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\markerdetector.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\subpixelcorner.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="aruco\tutorial.h">
+      <Filter>Source Files\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="MinimalOgre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

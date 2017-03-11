@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aruco\area.cpp" />
+    <ClCompile Include="aruco\arucofidmarkers.cpp" />
+    <ClCompile Include="aruco\ar_omp.cpp" />
+    <ClCompile Include="aruco\BaseApplication.cpp" />
+    <ClCompile Include="aruco\board.cpp" />
+    <ClCompile Include="aruco\boarddetector.cpp" />
+    <ClCompile Include="aruco\cameraparameters.cpp" />
+    <ClCompile Include="aruco\chromaticmask.cpp" />
+    <ClCompile Include="aruco\cvdrawingutils.cpp" />
+    <ClCompile Include="aruco\DebugDrawer.cpp" />
+    <ClCompile Include="aruco\highlyreliablemarkers.cpp" />
+    <ClCompile Include="aruco\marker.cpp" />
+    <ClCompile Include="aruco\markerdetector.cpp" />
+    <ClCompile Include="aruco\subpixelcorner.cpp" />
+    <ClCompile Include="aruco\tutorial.cpp" />
+    <ClCompile Include="TinyOgre.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aruco\area.h" />
+    <ClInclude Include="aruco\aruco.h" />
+    <ClInclude Include="aruco\arucofidmarkers.h" />
+    <ClInclude Include="aruco\ar_omp.h" />
+    <ClInclude Include="aruco\BaseApplication.h" />
+    <ClInclude Include="aruco\board.h" />
+    <ClInclude Include="aruco\boarddetector.h" />
+    <ClInclude Include="aruco\cameraparameters.h" />
+    <ClInclude Include="aruco\chromaticmask.h" />
+    <ClInclude Include="aruco\cvdrawingutils.h" />
+    <ClInclude Include="aruco\DebugDrawer.h" />
+    <ClInclude Include="aruco\exports.h" />
+    <ClInclude Include="aruco\highlyreliablemarkers.h" />
+    <ClInclude Include="aruco\marker.h" />
+    <ClInclude Include="aruco\markerdetector.h" />
+    <ClInclude Include="aruco\subpixelcorner.h" />
+    <ClInclude Include="aruco\tutorial.h" />
+    <ClInclude Include="TinyOgre.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5BFBB039-C47D-4D1C-9E9E-08E23E804877}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OgreTiny</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(OGRE_DIR)\ogre-dependencies-winrt\include;$(OGRE_DIR)\Ogre\OgreMain\include;$(OGRE_DIR)\Ogre\build\include;$(OGRE_DIR)\ogre-dependencies-winrt\src\ois\includes;$(OGRE_DIR)\Ogre;$(OGRE_DIR)\Ogre\OgreMain\include\Threading;$(OGRE_DIR)\Ogre\Samples\Common\include;$(OGRE_DIR)\Ogre\Components\RTShaderSystem\include;$(OGRE_DIR)\Ogre\Components\Overlay\include;$(OGRE_DIR)\ogre-dependencies-winrt\include\OIS;$(INDE_OPENCV_DIR)\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OGRE_DIR)\ogre-dependencies-winrt\lib\Debug;$(OGRE_DIR)\Ogre\build\lib\Debug;$(OCVLIBDIR_D);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OIS_d.lib;user32.lib;OgreMain_d.lib;OgreOverlay_d.lib;$(OCVLIBs_D)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OgreSDK_1-9-0\ogre-dependencies-winrt\include;C:\Intel\INDE\OgreSDK_1-9-0\Ogre\OgreMain\include;C:\Intel\INDE\OgreSDK_1-9-0\Ogre\build\include;C:\Intel\INDE\OgreSDK_1-9-0\ogre-dependencies-winrt\src\ois\includes;C:\Intel\INDE\OgreSDK_1-9-0\Ogre;C:\Intel\INDE\OgreSDK_1-9-0\Ogre\OgreMain\include\Threading;C:\Intel\INDE\OgreSDK_1-9-0\Ogre\Samples\Common\include;C:\Intel\INDE\OgreSDK_1-9-0\Ogre\Components\RTShaderSystem\include;C:\Intel\INDE\OgreSDK_1-9-0\Ogre\Components\Overlay\include;$(INDE_OPENCV_DIR)\include;C:\Intel\INDE\OgreSDK_1-9-0\ogre-dependencies-winrt\include\OIS;C:\Intel\INDE\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OGRE_DIR)\ogre-dependencies-winrt\lib\Release;$(OGRE_DIR)\Ogre\build\lib\Release;$(OCVLIBDIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OIS.lib;OgreMain.lib;user32.lib;OgreOverlay.lib;$(OCVLIBs)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
